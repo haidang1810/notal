@@ -1,0 +1,21 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/schema/acl-manifests/acl.schema.json",
+  "identifier": "default",
+  "description": "Notal desktop capabilities",
+  "windows": ["main", "quick-capture", "clipboard-toast", "screenshot-capture"],
+  "permissions": [
+    "core:default",
+    "global-shortcut:allow-register",
+    "global-shortcut:allow-unregister",
+    "global-shortcut:allow-unregister-all",
+    "clipboard-manager:allow-read-text",
+    "clipboard-manager:allow-write-text",
+    "clipboard-manager:allow-read-image",
+    "fs:allow-read-text-file",
+    "fs:allow-write-text-file",
+    "fs:allow-app-read-recursive",
+    "fs:allow-app-write-recursive",
+    "shell:allow-open",
+    "dialog:default"
+  ]
+}
